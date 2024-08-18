@@ -34,3 +34,55 @@ a {
 ul {
     list-style-type: none;
 }
+
+.dashboard-heading {
+    font-size: 2.4rem;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: #6496ee;
+    grid-row: 1 / span 2;
+    padding: 2rem;
+}
+
+.header {
+    background-color: green;
+    grid-row: 1 / span 1;
+}
+
+.main {
+    background-color: red;
+    grid-row: 2 / span 1;
+}
+
+.svg-icon {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(98%) saturate(10%) hue-rotate(297deg) brightness(110%) contrast(98%);
+    width: 1.8rem;
+    margin-right: 1.8rem;
+}
+
+.svg-icon-large {
+    width: 4rem;
+}
+
+.sidebar-nav li {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.sidebar-nav li a, .dashboard-heading a {
+    color: #fcfcfc;
+    display: flex;
+}
+
+.sidebar-nav li:first-of-type, .sidebar-nav li:nth-of-type(7) {
+    margin-top: 4rem;
+}
