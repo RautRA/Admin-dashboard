@@ -53,12 +53,16 @@ ul {
 }
 
 .header {
-    background-color: green;
+    background-color: #fcfcfc;
     grid-row: 1 / span 1;
+    padding: 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
 }
 
 .main {
-    background-color: red;
+    background-color: #e0e0e0;
     grid-row: 2 / span 1;
 }
 
@@ -85,4 +89,96 @@ ul {
 
 .sidebar-nav li:first-of-type, .sidebar-nav li:nth-of-type(7) {
     margin-top: 4rem;
+}
+
+.search-icon, .notifications-icon {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(0%) saturate(1186%) hue-rotate(184deg) brightness(99%) contrast(88%);
+    width: 2.4rem;
+}
+
+.search-input {
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 0.2rem 1rem;
+    border: 0;
+    border-radius: 1.5rem;
+    background-color: #e0e0e0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.user-info {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user-avatar {
+    border-radius: 50%;
+    background-color: #b3b300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-avatar-small {
+    width: 4rem;
+    height: 4rem;
+}
+
+.user-avatar-small img {
+    height: 75%;
+}
+
+.user-avatar-big {
+    width: 6rem;
+    height: 6rem;
+}
+
+.user-avatar-big img {
+    height: 75%;
+}
+
+.username {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.user-greeting {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.user-greeting p:first-of-type {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.user-greeting p:last-of-type {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn {
+    width: 10rem;
+    padding: 0.8rem 1.6rem;
+    background-color: #6496ee;
+    color: #fcfcfc;
+    border: 0;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
