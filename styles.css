@@ -61,11 +61,6 @@ ul {
     gap: 1.5rem;
 }
 
-.main {
-    background-color: #e0e0e0;
-    grid-row: 2 / span 1;
-}
-
 .svg-icon {
     filter: brightness(0) saturate(100%) invert(89%) sepia(98%) saturate(10%) hue-rotate(297deg) brightness(110%) contrast(98%);
     width: 1.8rem;
@@ -161,18 +156,18 @@ ul {
 }
 
 .user-greeting p:last-of-type {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 600;
 }
 
-.btns {
+.header .btns {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
 }
 
-.btn {
+.header .btn {
     width: 10rem;
     padding: 0.8rem 1.6rem;
     background-color: #6496ee;
@@ -181,4 +176,114 @@ ul {
     border-radius: 2rem;
     font-size: 1.4rem;
     font-weight: 600;
+}
+
+.main-content {
+    background-color: #e0e0e0;
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.main-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    grid-row: span 2;
+}
+
+.trending, .announcements {
+    grid-row: span 1;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.project {
+    padding: 2rem 3rem;
+    background-color: #fcfcfc;
+    grid-row: span 2;
+    border-radius: 10px;
+    border-left: 8px solid #b3b300;
+}
+
+.project-title {
+    font-size: 1.6rem;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #708090;
+}
+
+.project .btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: 2.1rem;
+}
+
+.project .btn {
+    width: 2rem;
+    background-color: #fcfcfc;
+    border: 0;
+}
+
+.trending-users, .announcement-list {
+    background-color: #fcfcfc;
+    padding: 2.5rem;
+    border-radius: 10px;
+}
+
+.announcement-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.trending-username, .user-fullname, .announcement-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.announcement-text, .user-fullname {
+    color: #708090;
+}
+
+.trending-user {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.trending-user:last-of-type {
+    margin-bottom: 0;
+}
+
+.announcement {
+    border-bottom: 2px solid #e0e0e0;
+    margin: 2rem 0;
+}
+
+.announcement:first-of-type {
+    margin-top: 0;
+}
+
+.announcement:last-of-type {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.announcement-text {
+    margin-bottom: 2rem;
 }
